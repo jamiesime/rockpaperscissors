@@ -21,7 +21,7 @@ class Game
 
   def compare(pick1, pick2)
     # try a guard clause, return 'winner' if pick1 == rock and pick 2 != paper
-    # then at the end return no winner if none of those cases were met
+    # then at the end return no winner if none of those cases were met.
     winner = ''
     case pick1
       when 'scissors'
@@ -29,20 +29,22 @@ class Game
           return winner = 'you'
         elsif pick2 == 'rock'
           return winner = 'your opponent'
+        end
       when 'paper'
         if pick2 == 'rock'
           return winner = 'you'
         elsif pick2 == 'scissors'
           return winner = 'your opponent'
+        end
       when 'rock'
         if pick2 == 'scissors'
           return winner = 'you'
         elsif pick2 == 'paper'
           return winner = 'your opponent'
         end
+      end
+        winner = 'no-one'
+        return winner
     end
-      return winner = 'no-one'
-
-  end
 
 end

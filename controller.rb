@@ -1,7 +1,6 @@
 require 'sinatra'
 require 'sinatra/contrib/all' if development?
 require 'json'
-
 require_relative 'models/game.rb'
 
 gamerules = Game.new()
